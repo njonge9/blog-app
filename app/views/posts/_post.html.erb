@@ -1,0 +1,12 @@
+<div class="card w-75 mb-3">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Title:</strong>
+    <%= post.title %></h5>
+    <h5 class="card-title"><strong>Posted:</strong>
+    <%= time_tag post.created_at, "data-local": "time-ago" %></h5>
+    <h5 class="card-title"><strong><%= pluralize post.comments.count, "comment"%></strong></h5>
+    <h5 class="card-title"> <strong>Content:</strong>
+    <%= post.content %></h5>
+  </div>
+</div>
+
